@@ -4,7 +4,7 @@ Rounds a number to the nearest N
 
 
 ```js
-import nearest from 'nearest';
+import nearest from '@akmjenkins/nearest';
 
 const roundToNearest10 = nearest(10);
 

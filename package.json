@@ -1,5 +1,5 @@
 {
-  "name": "nearest",
+  "name": "@akmjenkins/nearest",
   "version": "1.0.0",
   "description": "Round to a nearest N",
   "main": "build/index.js",
