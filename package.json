@@ -24,7 +24,7 @@
     "prepublishOnly": "yarn test && yarn build",
     "build": "rimraf build && babel index.js -d build && rollup -c ",
     "lint": "eslint index.js",
-    "test:ci": "yarn test --coverage --coverageReporters=lcov --coverageDirectory=./coverage",
+    "test:ci": "yarn test --coverage --coverageReporters=lcov --coverageDirectory=./coverage | coveralls",
     "test": "jest"
   },
   "author": "Adam Jenkins",
