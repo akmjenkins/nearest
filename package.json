@@ -1,6 +1,6 @@
 {
   "name": "@akmjenkins/nearest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Round to a nearest N",
   "main": "build/index.js",
   "browser": "build/bundle.min.js",
