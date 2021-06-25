@@ -9,18 +9,9 @@ module.exports = {
         ecmaVersion: 6,
         sourceType: 'module',
     },
-    settings: {
-        'import/resolver': {
-            node: {
-                paths: ['./src'],
-            },
-        },
-    },
     extends: [
         'eslint:recommended',
-        'plugin:prettier/recommended',
-        'plugin:import/errors',
-        'plugin:import/warnings',
+        'plugin:prettier/recommended'
     ],
     ignorePatterns: ['build/*','**/*.d.ts'],
     rules: {
@@ -33,14 +24,7 @@ module.exports = {
             'error',
             { allowAllPropertiesOnSameLine: true },
         ],
-        quotes: ['error', 'single', { allowTemplateLiterals: true }],
-        'import/no-unresolved': [2, { commonjs: true, amd: true }],
-        'import/named': 2,
-        'import/namespace': 0,
-        'import/no-self-import': 2,
-        'import/first': 2,
-        'import/order': 2,
-        'import/no-named-as-default': 0,
+        quotes: ['error', 'single', { allowTemplateLiterals: true }]
     },
     overrides: [
         {
@@ -60,9 +44,7 @@ module.exports = {
             },
             extends: [
                 'eslint:recommended',
-                'plugin:import/errors',
-                'plugin:import/warnings',
-                'plugin:jest/recommended',
+                'plugin:jest/recommended'
             ],
         }
     ],
