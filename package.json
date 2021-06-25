@@ -24,7 +24,7 @@
     "prepublishOnly": "yarn test && yarn build",
     "build": "rimraf build && babel index.js -d build && rollup -c ",
     "lint": "eslint index.js",
-    "test:ci": "yarn test --coverage --coverageReporters=lcov --coverageDirectory=./coverage | coveralls",
+    "test:ci": "yarn test --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest"
   },
   "author": "Adam Jenkins",
@@ -33,10 +33,11 @@
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
+    "@rollup/plugin-babel": "^5.3.0",
     "@types/jest": "^25.2.1",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^25.1.0",
-    "coveralls": "^3.0.9",
+    "coveralls": "^3.1.0",
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-jest": "^22.17.0",
@@ -47,8 +48,5 @@
     "rollup-plugin-terser": "^6.1.0",
     "ts-jest": "^26.4.1",
     "typescript": "^4.2.4"
-  },
-  "dependencies": {
-    "@rollup/plugin-babel": "^5.3.0"
   }
 }
