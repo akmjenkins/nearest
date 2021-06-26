@@ -1,4 +1,6 @@
-module.exports = {
-  presets: [['@babel/preset-env', { targets: { browsers: '>1%' } }]],
-  plugins: [['add-module-exports']],
+module.exports = api => {
+  return {
+    presets: [['@babel/preset-env', { targets: { browsers: '>1%' } }]],
+    plugins: api.env('test') ? [] : [['add-module-exports']],
+  };
 };
